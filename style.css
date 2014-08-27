@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Avenir Next, sans-serif;
+}
+
+.sets {
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: 1px;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 6px;
+}
+
+.sets ol {
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+}
+
+.sets ol .set {
+  padding: 3px 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: gray;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.sets ol .set.active {
+  color: red;
+}
+
+.sets ol .set.selected {
+  border-color: red;
+  cursor: default;
+}
